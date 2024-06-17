@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style-prod.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/img/logoSZSemGuitarra.png">
+    <script src="/script-prod.js" defer></script>
+    <script src="/script.js" defer></script>
+    <title>Produto</title>
+</head>
+<body>
+
+    <header >
+
+        <section id="barra">
+
+            <section class="barra-esquerda">
+                <a href="/index.html">
+                    <img src="/img/logoSZ.png" alt="Logo Sadaz" class="logo">
+                </a>
+            </section>
+
+            <section class="barra-centro">
+
+
+                <form class="barra-pesquisa" action="./produtos.html">
+
+
+                    <button type="submit" class="pesquisar"><img src="/img/lupa.png" alt="lupa" class="lupa"></button>
+
+                    <input type="search" name="pesquisa" placeholder="O que deseja pesquisar?" class="pesquisa">
+
+                    
+
+                </form>
+                
+            </section>
+
+            
+            <section class="barra-direita">
+
+                <button class="botao" onclick="mudarFundo()">Mudar contraste</button>
+
+                <a href="./carrinho.html"><img src="/img/carrinho.png" class="carrinho" alt="carrinho"></a>
+
+                <img src="/img/Default_avatar_profile-removebg-preview.png" alt="avatar" class="avatar">
+
+            </section>
+
+        </section>
+
+        <nav class="barra-navegacao">
+        
+            <ul>
+                <li><a href="./produtos.html">Fender</a></li>
+                <li><a href="./produtos.html">Tagima</a></li>
+                <li><a href="./produtos.html">Ibanez</a></li>
+                <li><a href="./produtos.html">Gibson</a></li>
+                <li><a href="./produtos.html">Palhetas</a></li>
+                <li><a href="./produtos.html">Cabos</a></li>
+                <li><a href="./produtos.html">Amplificadores</a></li>
+            </ul>
+            
+            
+        </nav>
+
+    </header>
+
+
+    <!-- Vlibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    <main class="corpo">
+
+        <section class="fundo-texto">
+            <section class="paragrafo">
+                <h1>Entre em Contato com a Sadaz</h1>
+                <p>
+                    Estamos sempre à disposição para ajudar você a encontrar o instrumento musical perfeito ou resolver qualquer dúvida que possa ter sobre nossos produtos e serviços. Na Sadaz, valorizamos cada cliente e estamos comprometidos em fornecer o melhor atendimento possível. Se você precisar de assistência, por favor, entre em contato conosco através das informações abaixo:
+                </p>
+            </section>
+
+            <section class="paragrafo">
+                <h2>Informações de Contato:</h2>
+                <h3>Endereço:</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7333458.916997924!2d-53.56978368306328!3d-26.170951991072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c89ff86dd901%3A0x51348d18b7602267!2sGerm%C3%A2nia%20Instrumentos%20Musicais!5e0!3m2!1spt-BR!2sbr!4v1718078911868!5m2!1spt-BR!2sbr" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <h3>Telefone</h3>
+                <p>
+                    (11) 1234-5678
+                </p>
+                
+                <h3>Email</h3>
+                <p>
+                    contato@sadaz.com.br
+                </p>
+
+            </section>
+
+            <section class="paragrafo">
+                <h2>Formulário de Contato</h2>
+                <p>
+                    Se preferir, você também pode nos enviar uma mensagem diretamente pelo formulário abaixo. Responderemos o mais rápido possível.
+                </p>
+
+                <div class="info-usuario">
+
+                    <form action="">
+    
+                        <label for="Nome">Nome: </label>
+                        <input id="usuario" type="text">
+    
+                        <label for="Assunto">Assunto: </label>
+                        <textarea id="comentario" name="comentario"></textarea>
+    
+                        <div class="botao-comentar">
+                        <input class="botao2" type="reset" onclick="abrirPopup()" value="Comentar">
+                        </div>
+    
+                    </form>
+    
+                </div>
+
+                <div class="popup" id="popup">
+                    <div class="popup-conteudo">
+                        <span class="fechar" onclick="fecharPopup()">&times;</span>
+                        <h2>Mensagem enviada</h2>
+                        <p>Sua mensagem foi enviada com sucesso, tentaremos te responder o mais rapido possível.</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <hr>
+            <h2>Sadaz - O backstage do seu som</h2>
+        </section>
+
+        
+    </main>
+
+    <footer class="rodape">
+        <div class="informacoes">
+            <div class="informacoes-esquerda">
+                
+                <div>
+                    <a href="./sobre.html">Sobre nos</a>
+                </div>
+                <div>
+                    <a href="#">Fale conosco</a>
+                </div>
+                
+            </div>
+
+            <div class="informacoes-direita">
+
+                <p>+55 (99) 99999-9999</p>
+                <p>sadaz@sadaz.com</p>
+
+            </div>
+            
+        </div>
+        <p>© 2024 Andrey Rosa Dias</p>
+    </footer>
+
+</body>
+</html>

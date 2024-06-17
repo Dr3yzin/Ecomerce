@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style-prod.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/img/logoSZSemGuitarra.png">
+    <script src="/script-prod.js" defer></script>
+    <script src="/script.js" defer></script>
+    <title>Produto</title>
+</head>
+<body>
+
+    <header >
+
+        <section id="barra">
+
+            <section class="barra-esquerda">
+                <a href="/index.html">
+                    <img src="/img/logoSZ.png" alt="Logo Sadaz" class="logo">
+                </a>
+            </section>
+
+            <section class="barra-centro">
+
+
+                <form class="barra-pesquisa" action="./produtos.html">
+
+
+                    <button type="submit" class="pesquisar"><img src="/img/lupa.png" alt="lupa" class="lupa"></button>
+
+                    <input type="search" name="pesquisa" placeholder="O que deseja pesquisar?" class="pesquisa">
+
+                    
+
+                </form>
+                
+            </section>
+
+            
+            <section class="barra-direita">
+
+                <button class="botao" onclick="mudarFundo()">Mudar contraste</button>
+
+                <a href="./carrinho.html"><img src="/img/carrinho.png" class="carrinho" alt="carrinho"></a>
+
+                <img src="/img/Default_avatar_profile-removebg-preview.png" alt="avatar" class="avatar">
+
+            </section>
+
+        </section>
+
+        <nav class="barra-navegacao">
+        
+            <ul>
+                <li><a href="./produtos.html">Fender</a></li>
+                <li><a href="./produtos.html">Tagima</a></li>
+                <li><a href="./produtos.html">Ibanez</a></li>
+                <li><a href="./produtos.html">Gibson</a></li>
+                <li><a href="./produtos.html">Palhetas</a></li>
+                <li><a href="./produtos.html">Cabos</a></li>
+                <li><a href="./produtos.html">Amplificadores</a></li>
+            </ul>
+            
+            
+        </nav>
+
+    </header>
+
+
+    <!-- Vlibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    <main class="corpo">
+
+        <section class="produto">
+
+            <div class="imagens">
+                <nav class="menu-imagens">
+                    <button class="opcao-imagem"><img src="/img/Logo-teste.png" alt=""></button>
+                    <button class="opcao-imagem"><img src="/img/Logo-teste1.png" alt=""></button>
+                    <button class="opcao-imagem"><img src="/img/Logo-teste2.png" alt=""></button>
+                    <button class="opcao-imagem"><img src="/img/Logo-teste3.png" alt=""></button>
+                    <button class="opcao-imagem"><img src="/img/Logo-teste4.png" alt=""></button>
+                </nav>
+                
+                <img id="imagem-amostra" src="/img/Logo-teste.png" alt="">
+            </div>
+
+            <div class="info">
+                <h1 class="titulo-produto">Produto desejado com todas as caracteristicas dele e um titulo bem grande</h1>
+
+                <h2 class="preco-pagina"><u>R$44,00</u></h2>
+
+                <h3>Quantidade:</h3>
+
+                <input type="number" id="qtde" value="1" oninput="validarQtde(this)">
+
+                <button class="comprar">Comprar</button>
+            </div>
+
+        </section>
+
+        <section class="descricao">
+            
+
+            <h2 class="titulo-descritivo">Descrição:</h2>
+
+
+            <div id="paragrafo-descritivo">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut aliquam nisl, a lacinia eros. Aliquam ac erat sem. Pellentesque fringilla sapien et ligula ullamcorper, et porta felis ultrices. Ut risus sapien, fermentum ut velit a, cursus interdum ligula. Etiam quis tempus ante. Pellentesque blandit augue lacus, ut pulvinar justo pellentesque ut. Ut ornare elit in arcu tincidunt, quis rutrum elit dapibus.
+
+                    Vivamus magna lacus, tristique luctus dui quis, cursus eleifend lacus. Etiam auctor nulla sed ligula posuere, in blandit magna semper. Aenean tempor nunc nulla, vel mollis est suscipit at. Fusce et mauris et orci sagittis lacinia. In lacus velit, faucibus non purus in, consectetur ornare velit. Donec eleifend commodo lacus vel maximus. Vivamus vel erat feugiat, placerat velit ac, sollicitudin dui.
+
+                    Fusce convallis orci non commodo mattis. Nunc pretium enim erat, eget laoreet ex tempor sit amet. Vestibulum convallis enim sit amet lacus lacinia consequat nec imperdiet urna. Phasellus congue leo dolor, ac suscipit tellus faucibus mollis. Donec hendrerit porta mi, sed porttitor risus. Sed pharetra lacus quis ligula imperdiet, a aliquam massa congue. Nunc ac mi vel metus viverra varius. Mauris sit amet nisi id mauris cursus scelerisque. Nulla tristique sapien et purus cursus finibus. Nunc hendrerit risus neque, ac eleifend enim luctus eget. Vivamus accumsan nisi in metus pellentesque pretium. Curabitur orci nibh, scelerisque et odio sed, eleifend varius massa. Nullam sagittis sodales lectus ut tincidunt.
+
+                    Etiam nec diam libero. Morbi pulvinar consectetur maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id purus vel purus tristique interdum at malesuada libero. Proin tortor lacus, consequat sed est et, auctor pulvinar metus. Aliquam ultrices purus ac risus gravida pulvinar. Suspendisse ullamcorper ut augue quis hendrerit. Integer lobortis ipsum at tincidunt dictum. Nunc a nulla ac mauris tempor ultricies. Vestibulum nulla enim, auctor at tincidunt eget, pulvinar et nisi. Nam gravida ante at mauris vestibulum, vel egestas enim vestibulum. Duis dapibus non nibh sed vulputate. Fusce ac nibh vel leo feugiat bibendum ut id sem. Pellentesque luctus ac magna at ultrices. Integer eros est, viverra ut dolor sit amet, ullamcorper egestas diam.
+                </p>
+            </div>
+
+
+            <button id="ver-mais" onclick="verMais()">Ver mais</button>
+
+        </section>
+
+        <section class="comentarios">
+
+            <h2>Comentarios:</h2>
+
+            <div class="info-usuario">
+
+                <form action="">
+
+                    <label for="usuario">Usuario: </label>
+                    <input id="usuario" type="text">
+
+                    <label for="comentario">Comentario: </label>
+                    <textarea id="comentario" name="comentario"></textarea>
+
+                    <div class="botao-comentar">
+                    <input class="botao2" type="reset" onclick="abrirPopup()" value="Comentar">
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="popup" id="popup">
+                    <div class="popup-conteudo">
+                        <span class="fechar" onclick="fecharPopup()">&times;</span>
+                        <h2>Não foi possivel comentar</h2>
+                        <p>Parece que ocorreu um erro ao tentar publicar seu comentário.</p>
+                    </div>
+            </div>
+
+            <div class="info-usuario">
+                <h2>User 1</h2>
+                <p>Comentario1</p>
+            </div>
+
+            <div class="info-usuario">
+                <h2>User 2</h2>
+                <p>Comentario2</p>
+            </div>
+
+            <div class="info-usuario">
+                <h2>User 3</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut aliquam nisl, a lacinia eros. Aliquam ac erat sem. Pellentesque fringilla sapien et ligula ullamcorper, et porta felis ultrices. Ut risus sapien, fermentum ut velit a, cursus interdum ligula. Etiam quis tempus ante. Pellentesque blandit augue lacus, ut pulvinar justo pellentesque ut. Ut ornare elit in arcu tincidunt, quis rutrum elit dapibus.
+                </p>
+            </div>
+
+            <div class="info-usuario">
+                <h2>User 4</h2>
+                <p>
+                    Etiam nec diam libero. Morbi pulvinar consectetur maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id purus vel purus tristique interdum at malesuada libero. Proin tortor lacus, consequat sed est et, auctor pulvinar metus. Aliquam ultrices purus ac risus gravida pulvinar. Suspendisse ullamcorper ut augue quis hendrerit. Integer lobortis ipsum at tincidunt dictum. Nunc a nulla ac mauris tempor ultricies. Vestibulum nulla enim, auctor at tincidunt eget, pulvinar et nisi. Nam gravida ante at mauris vestibulum, vel egestas enim vestibulum. Duis dapibus non nibh sed vulputate. Fusce ac nibh vel leo feugiat bibendum ut id sem. Pellentesque luctus ac magna at ultrices. Integer eros est, viverra ut dolor sit amet, ullamcorper egestas diam.
+                </p>
+            </div>
+
+        </section>
+
+        
+    </main>
+
+    <footer class="rodape">
+        <div class="informacoes">
+            <div class="informacoes-esquerda">
+                
+                <div>
+                    <a href="./sobre.html">Sobre nos</a>
+                </div>
+                <div>
+                    <a href="./fale.html">Fale conosco</a>
+                </div>
+                
+            </div>
+
+            <div class="informacoes-direita">
+
+                <p>+55 (99) 99999-9999</p>
+                <p>sadaz@sadaz.com</p>
+
+            </div>
+            
+        </div>
+        <p>© 2024 Andrey Rosa Dias</p>
+    </footer>
+
+</body>
+</html>

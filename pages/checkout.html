@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style-prod.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/img/logoSZSemGuitarra.png">
+    <script src="/script-prod.js" defer></script>
+    <script src="/script.js" defer></script>
+    <title>Produto</title>
+</head>
+<body>
+
+    <header >
+
+        <section id="barra">
+
+            <section class="barra-esquerda">
+                <a href="/index.html">
+                    <img src="/img/logoSZ.png" alt="Logo Sadaz" class="logo">
+                </a>
+            </section>
+
+            <section class="barra-centro">
+
+
+                <form class="barra-pesquisa" action="./produtos.html">
+
+
+                    <button type="submit" class="pesquisar"><img src="/img/lupa.png" alt="lupa" class="lupa"></button>
+
+                    <input type="search" name="pesquisa" placeholder="O que deseja pesquisar?" class="pesquisa">
+
+                    
+
+                </form>
+                
+            </section>
+
+            
+            <section class="barra-direita">
+
+                <button class="botao" onclick="mudarFundo()">Mudar contraste</button>
+
+                <a href="./carrinho.html"><img src="/img/carrinho.png" class="carrinho" alt="carrinho"></a>
+
+                <img src="/img/Default_avatar_profile-removebg-preview.png" alt="avatar" class="avatar">
+
+            </section>
+
+        </section>
+
+        <nav class="barra-navegacao">
+        
+            <ul>
+                <li><a href="./produtos.html">Fender</a></li>
+                <li><a href="./produtos.html">Tagima</a></li>
+                <li><a href="./produtos.html">Ibanez</a></li>
+                <li><a href="./produtos.html">Gibson</a></li>
+                <li><a href="./produtos.html">Palhetas</a></li>
+                <li><a href="./produtos.html">Cabos</a></li>
+                <li><a href="./produtos.html">Amplificadores</a></li>
+            </ul>
+            
+            
+        </nav>
+
+    </header>
+
+    
+
+
+    <!-- Vlibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    <main class="corpo">
+
+        <section class="fundo-texto">
+            <h1>Checkout</h1>
+
+            <form action="">
+                <div class="linha">
+                    <p>Nome: </p><input type="text">
+                    <p>Sobrenome: </p><input type="text">
+                </div>
+
+                <div class="linha">
+                    <p>Nascimento: </p><input type="date">
+                    <p>Endereço: </p><input type="text">
+                </div>
+
+                <div class="linha">
+                    <p>Email: </p><input type="email">
+                    <p>Telefone: </p><input type="tel" oninput="formatoTell(this)" maxlength="15">
+                </div>
+
+                <div class="linha">
+                    <p>Senha: </p><input type="password">
+                    <p>Repita sua senha: </p><input type="password">
+                </div>
+                
+                <div class="linha">
+                    <p>Nome no cartão: </p><input type="text">
+                    <p>CPF: </p><input type="text" oninput="formatoCPF(this)" maxlength="14">
+                </div>
+
+                <div class="linha">
+                    <p>Cartão: </p><input type="text">
+                    <p>Validade: </p><input type="date">
+                    <p>CVV: </p><input type="text" oninput="soNumero(this)" maxlength="3">
+                </div>
+
+                <input type="submit" class="botao4">
+
+            </form>
+               
+        </section>
+
+        
+    </main>
+
+    <footer class="rodape">
+        <div class="informacoes">
+            <div class="informacoes-esquerda">
+                
+                <div>
+                    <a href="./sobre.html">Sobre nos</a>
+                </div>
+                <div>
+                    <a href="#">Fale conosco</a>
+                </div>
+                
+            </div>
+
+            <div class="informacoes-direita">
+
+                <p>+55 (99) 99999-9999</p>
+                <p>sadaz@sadaz.com</p>
+
+            </div>
+            
+        </div>
+        <p>© 2024 Andrey Rosa Dias</p>
+    </footer>
+
+</body>
+</html>

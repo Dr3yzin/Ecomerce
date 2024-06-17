@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style-prod.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/img/logoSZSemGuitarra.png">
+    <script src="/script-prod.js" defer></script>
+    <script src="/script.js" defer></script>
+    <title>Produto</title>
+</head>
+<body>
+
+    <header >
+
+        <section id="barra">
+
+            <section class="barra-esquerda">
+                <a href="/index.html">
+                    <img src="/img/logoSZ.png" alt="Logo Sadaz" class="logo">
+                </a>
+            </section>
+
+            <section class="barra-centro">
+
+
+                <form class="barra-pesquisa" action="./produtos.html">
+
+
+                    <button type="submit" class="pesquisar"><img src="/img/lupa.png" alt="lupa" class="lupa"></button>
+
+                    <input type="search" name="pesquisa" placeholder="O que deseja pesquisar?" class="pesquisa">
+
+                    
+
+                </form>
+                
+            </section>
+
+            
+            <section class="barra-direita">
+
+                <button class="botao" onclick="mudarFundo()">Mudar contraste</button>
+
+                <a href="./carrinho.html"><img src="/img/carrinho.png" class="carrinho" alt="carrinho"></a>
+
+                <img src="/img/Default_avatar_profile-removebg-preview.png" alt="avatar" class="avatar">
+
+            </section>
+
+        </section>
+
+        <nav class="barra-navegacao">
+        
+            <ul>
+                <li><a href="./produtos.html">Fender</a></li>
+                <li><a href="./produtos.html">Tagima</a></li>
+                <li><a href="./produtos.html">Ibanez</a></li>
+                <li><a href="./produtos.html">Gibson</a></li>
+                <li><a href="./produtos.html">Palhetas</a></li>
+                <li><a href="./produtos.html">Cabos</a></li>
+                <li><a href="./produtos.html">Amplificadores</a></li>
+            </ul>
+            
+            
+        </nav>
+
+    </header>
+
+
+    <!-- Vlibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    <main class="corpo">
+
+        <div class="compra">
+            <section class="produtos">
+
+                <div class="cartao-produto">
+                    <div class="cartao-produto-img">
+                        <img src="/img/Logo-teste.png" alt="Produto desejado">
+                    </div>
+
+                    <div class="cartao-produto-texto">
+                        <h2>Produto desejado</h2>
+                        <h3>R$ 44,35</h3>
+                    </div>
+                </div>
+
+                <div class="cartao-produto">
+                    <div class="cartao-produto-img">
+                        <img src="/img/Logo-teste.png" alt="Produto desejado">
+                    </div>
+
+                    <div class="cartao-produto-texto">
+                        <h2>Produto desejado</h2>
+                        <h3>R$ 44,35</h3>
+                    </div>
+                </div>
+
+                <div class="cartao-produto">
+                    <div class="cartao-produto-img">
+                        <img src="/img/Logo-teste.png" alt="Produto desejado">
+                    </div>
+
+                    <div class="cartao-produto-texto">
+                        <h2>Produto desejado</h2>
+                        <h3>R$ 44,35</h3>
+                    </div>
+                </div>
+
+                <div class="cartao-produto">
+                    <div class="cartao-produto-img">
+                        <img src="/img/Logo-teste.png" alt="Produto desejado">
+                    </div>
+
+                    <div class="cartao-produto-texto">
+                        <h2>Produto desejado</h2>
+                        <h3>R$ 44,35</h3>
+                    </div>
+                </div>
+
+                <div class="cartao-produto">
+                    <div class="cartao-produto-img">
+                        <img src="/img/Logo-teste.png" alt="Produto desejado">
+                    </div>
+
+                    <div class="cartao-produto-texto">
+                        <h2>Produto desejado</h2>
+                        <h3>R$ 44,35</h3>
+                    </div>
+                </div>
+                <div class="cartao-produto">
+                    <div class="cartao-produto-img">
+                        <img src="/img/Logo-teste.png" alt="Produto desejado">
+                    </div>
+
+                    <div class="cartao-produto-texto">
+                        <h2>Produto desejado</h2>
+                        <h3>R$ 44,35</h3>
+                    </div>
+                </div>
+
+                
+                
+            </section>
+
+            <section class="finalizar-compra">
+                <div class="total">
+                    <p class="preco-produto">+ R$ 22,00</p>
+                    <p class="preco-produto">+ R$ 10,05</p>
+                    <p class="preco-produto">+ R$ 2,00</p>
+                    <p class="preco-produto">+ R$ 0,89</p>
+
+
+                    <hr>
+                    <h2>Total: R$ 44,94</h2>
+
+                </div>
+
+                <button class="botao3" onclick="checkout()">Finalizar compra</button>
+                
+            </section>
+        </div>
+
+        
+    </main>
+
+    <footer class="rodape">
+        <div class="informacoes">
+            <div class="informacoes-esquerda">
+                
+                <div>
+                    <a href="./sobre.html">Sobre nos</a>
+                </div>
+                <div>
+                    <a href="./fale.html">Fale conosco</a>
+                </div>
+                
+            </div>
+
+            <div class="informacoes-direita">
+
+                <p>+55 (99) 99999-9999</p>
+                <p>sadaz@sadaz.com</p>
+
+            </div>
+            
+        </div>
+        <p>© 2024 Andrey Rosa Dias</p>
+    </footer>
+
+</body>
+</html>
