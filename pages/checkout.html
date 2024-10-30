@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style-prod.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../style-prod.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="/img/logoSZSemGuitarra.png">
-    <script src="/script-prod.js" defer></script>
-    <script src="/script.js" defer></script>
+    <script src="../script-prod.js" defer></script>
+    <script src="../script.js" defer></script>
     <title>Produto</title>
 </head>
 <body>
@@ -91,37 +91,37 @@
 
             <form action="">
                 <div class="linha">
-                    <p>Nome: </p><input type="text">
-                    <p>Sobrenome: </p><input type="text">
+                    <p>Nome: </p><input type="text" required>
+                    <p>Sobrenome: </p><input type="text" required>
                 </div>
 
                 <div class="linha">
-                    <p>Nascimento: </p><input type="date">
-                    <p>Endereço: </p><input type="text">
+                    <p>Nascimento: </p><input type="date" required>
+                    <p>Endereço: </p><input type="text" required>
                 </div>
 
                 <div class="linha">
-                    <p>Email: </p><input type="email">
-                    <p>Telefone: </p><input type="tel" oninput="formatoTell(this)" maxlength="15">
+                    <p>Email: </p><input type="email" required>
+                    <p>Telefone: </p><input type="tel" oninput="formatoTell(this)" maxlength="15" required>
                 </div>
 
                 <div class="linha">
-                    <p>Senha: </p><input type="password">
-                    <p>Repita sua senha: </p><input type="password">
+                    <p>Senha: </p><input type="password" required>
+                    <p>Repita sua senha: </p><input type="password" required>
                 </div>
                 
                 <div class="linha">
-                    <p>Nome no cartão: </p><input type="text">
-                    <p>CPF: </p><input type="text" oninput="formatoCPF(this)" maxlength="14">
+                    <p>Nome no cartão: </p><input type="text" required>
+                    <p>CPF: </p><input type="text" oninput="formatoCPF(this)" maxlength="14" required>
                 </div>
 
                 <div class="linha">
-                    <p>Cartão: </p><input type="text">
-                    <p>Validade: </p><input type="date">
-                    <p>CVV: </p><input type="text" oninput="soNumero(this)" maxlength="3">
+                    <p>Cartão: </p><input type="text" oninput="soNumero(this)" maxlength="16" required>
+                    <p>Validade: </p><input type="date" required>
+                    <p>CVV: </p><input type="text" oninput="soNumero(this)" maxlength="3" required>
                 </div>
 
-                <input type="submit" class="botao4">
+                <input type="submit" class="botao4" onclick="voltarIndex()">
 
             </form>
                
