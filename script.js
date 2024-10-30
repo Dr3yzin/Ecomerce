@@ -42,6 +42,10 @@ function checkout(){
   window.location.href = "./checkout.html";
 }
 
+function voltarIndex(){
+  window.location.href = "/index.html"
+}
+
 function formatoTell(input) {
   var valor = input.value.replace(/\D/g, '');
   valor = valor.replace(/^(\d{2})(\d)/g, '($1) $2'); 
@@ -69,3 +73,4 @@ function formatoCPF(input) {
 
   input.value = valor;
 }
+
